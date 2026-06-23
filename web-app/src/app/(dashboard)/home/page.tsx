@@ -4,6 +4,12 @@ import { AlertCircle } from "lucide-react";
 
 export const revalidate = 0;
 
+interface LowStockProduct {
+  name: string;
+  sku: string;
+  stock_quantity: number;
+}
+
 export default async function HomePage() {
   // 1. Fetch active orders (pending)
   const { count: activeOrdersCount, error: activeErr } = await supabase
@@ -41,7 +47,7 @@ export default async function HomePage() {
   }
 
   const lowStockCount = lowStockItems?.length || 0;
-  const items = lowStockItems || [];
+  const items = (lowStockItems as LowStockProduct[] | null) || [];
 
   return (
     <div className="flex flex-col gap-6">
