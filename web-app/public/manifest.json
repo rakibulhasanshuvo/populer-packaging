@@ -1,0 +1,17 @@
+{
+  "name": "Supply Pro Packaging Dashboard",
+  "short_name": "Supply Pro",
+  "theme_color": "#F5F5F7",
+  "background_color": "#FFFFFF",
+  "display": "standalone",
+  "orientation": "portrait",
+  "scope": "/",
+  "start_url": "/home",
+  "icons": [
+    {
+      "src": "globe.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

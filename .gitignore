@@ -1,0 +1,28 @@
+# Dependency directories
+web-app/node_modules/
+node_modules/
+
+# Next.js build output
+web-app/.next/
+.next/
+web-app/out/
+out/
+
+# Production build
+web-app/build/
+build/
+
+# Typescript build info
+web-app/tsconfig.tsbuildinfo
+*.tsbuildinfo
+
+# IDE files
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environments
+.env*
