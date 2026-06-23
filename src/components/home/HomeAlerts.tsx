@@ -68,7 +68,7 @@ export default function HomeAlerts() {
                 </div>
 
                 {/* Close Button */}
-                <button
+                <button type="button"
                   onClick={() => dismissAlert(alert.id)}
                   aria-label="Dismiss alert"
                   className="absolute top-3 right-3 p-1 rounded-full hover:bg-black/5 dark:hover:bg-white/5 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-apple-blue"

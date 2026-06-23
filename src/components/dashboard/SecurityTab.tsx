@@ -108,7 +108,7 @@ export default function SecurityTab() {
           Interface Appearance
         </label>
         <div className="grid grid-cols-2 gap-2">
-          <button
+          <button type="button"
             onClick={() => handleThemeChange("light")}
             className={`flex items-center justify-center gap-2 p-3 rounded-lg border text-xs font-semibold transition-all ${
               theme === "light"
@@ -119,7 +119,7 @@ export default function SecurityTab() {
             <Sun className="w-4 h-4" />
             <span>Light</span>
           </button>
-          <button
+          <button type="button"
             onClick={() => handleThemeChange("dark")}
             className={`flex items-center justify-center gap-2 p-3 rounded-lg border text-xs font-semibold transition-all ${
               theme === "dark"
@@ -159,7 +159,7 @@ export default function SecurityTab() {
               <span>Permission Denied (Check settings)</span>
             </div>
           ) : (
-            <button
+            <button type="button"
               onClick={requestNotificationPermission}
               className="w-full bg-apple-blue hover:bg-apple-blue/90 text-white py-2 rounded-apple-lg text-xs font-semibold transition-colors focus:outline-none"
             >
@@ -168,7 +168,7 @@ export default function SecurityTab() {
           )}
 
           {/* Test Notification Action */}
-          <button
+          <button type="button"
             onClick={sendLocalTestPush}
             disabled={permission !== "granted"}
             className="w-full bg-black/5 dark:bg-white/5 hover:bg-black/10 dark:hover:bg-white/10 text-typography-primary dark:text-canvas-light py-2 rounded-apple-lg text-xs font-semibold transition-colors flex items-center justify-center gap-1.5 focus:outline-none disabled:opacity-50"
@@ -251,8 +251,7 @@ export default function SecurityTab() {
             </div>
           </div>
 
-          <button
-            type="submit"
+          <button type="submit"
             className="w-full bg-apple-blue hover:bg-apple-blue/90 text-white py-2 rounded-apple-lg text-xs font-semibold transition-colors focus:outline-none"
           >
             Update Credentials

@@ -65,7 +65,7 @@ export default function CashFlowChart() {
 
         {/* Toggle Capsule Switcher */}
         <div className="flex bg-canvas-light dark:bg-black/40 p-0.5 rounded-full border border-black/5 dark:border-white/5 text-[10px] font-medium relative select-none">
-          <button
+          <button type="button"
             onClick={() => setIsAssetGrowthMode(false)}
             className={`py-1.5 px-3 rounded-full transition-[background-color,color,box-shadow] relative z-10 focus:outline-none focus-visible:ring-2 focus-visible:ring-apple-blue ${!isAssetGrowthMode
                 ? "bg-white dark:bg-surface-dark text-apple-blue font-bold shadow-sm"
@@ -74,7 +74,7 @@ export default function CashFlowChart() {
           >
             Cash Flow
           </button>
-          <button
+          <button type="button"
             onClick={() => setIsAssetGrowthMode(true)}
             className={`py-1.5 px-3 rounded-full transition-[background-color,color,box-shadow] relative z-10 focus:outline-none focus-visible:ring-2 focus-visible:ring-apple-blue ${isAssetGrowthMode
                 ? "bg-white dark:bg-surface-dark text-apple-blue font-bold shadow-sm"

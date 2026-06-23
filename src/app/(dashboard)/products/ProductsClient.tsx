@@ -72,7 +72,7 @@ export default function ProductsClient({ initialProducts }: { initialProducts: P
           </h1>
         </div>
 
-        <button
+        <button type="button"
           onClick={() => {
             setSelectedProduct(null);
             setProductDrawerOpen(true);
