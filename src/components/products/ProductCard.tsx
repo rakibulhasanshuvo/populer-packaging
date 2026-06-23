@@ -64,8 +64,7 @@ export default function ProductCard({
       </div>
 
       <div className="flex items-center justify-center border-l border-white/8 px-3 gap-2 shrink-0 select-none bg-black/10">
-        <button
-          type="button"
+        <button type="button"
           onClick={(e) => {
             e.stopPropagation();
             if (onEdit) onEdit();
@@ -76,8 +75,7 @@ export default function ProductCard({
           <Edit3 className="w-3.5 h-3.5" aria-hidden="true" />
         </button>
 
-        <button
-          type="button"
+        <button type="button"
           onClick={(e) => {
             e.stopPropagation();
             if (onDelete) onDelete();

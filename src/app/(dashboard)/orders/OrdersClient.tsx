@@ -59,7 +59,7 @@ export default function OrdersClient({ initialOrders }: { initialOrders: Order[]
           </h1>
         </div>
 
-        <button
+        <button type="button"
           onClick={() => setOrderSheetOpen(true)}
           className="bg-indigo-electric hover:bg-indigo-electric/90 text-white font-bold py-2.5 px-4 rounded-apple-lg text-xs flex items-center gap-1.5 select-none active:scale-95 transition-all shadow-sm cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-neon"
         >
@@ -72,7 +72,7 @@ export default function OrdersClient({ initialOrders }: { initialOrders: Order[]
         {STAGES.map((stage) => {
           const isActive = activeStage === stage.value;
           return (
-            <button
+            <button type="button"
               key={stage.value}
               onClick={() => setActiveStage(stage.value)}
               className={`flex-1 text-center py-2 text-[11px] font-bold rounded-md relative transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-neon cursor-pointer ${
@@ -102,7 +102,7 @@ export default function OrdersClient({ initialOrders }: { initialOrders: Order[]
           <div className="text-center py-12 bg-card-surface rounded-apple-lg border border-dashed border-white/8 text-typography-secondary text-sm flex flex-col items-center gap-3 select-none">
             <Package className="w-8 h-8 text-typography-secondary/60" aria-hidden="true" />
             <span className="font-medium text-typography-secondary">No orders in this stage.</span>
-            <button
+            <button type="button"
               onClick={() => setOrderSheetOpen(true)}
               className="mt-1 bg-indigo-electric/10 hover:bg-indigo-electric/20 text-indigo-electric font-bold py-1.5 px-4 rounded-full text-xs transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-neon cursor-pointer"
             >

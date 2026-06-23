@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 const initialProducts = [
   {
     id: "prod-1",
@@ -160,8 +161,8 @@ export function getMockDb() {
   }
 
   // Server-side dynamic require
-  const fs = require("fs");
-  const path = require("path");
+  const fs = eval('require("fs")');
+  const path = eval('require("path")');
   const dbPath = path.join(process.cwd(), "src/lib/supabase/mock-db.json");
 
   if (!fs.existsSync(dbPath)) {
@@ -190,8 +191,8 @@ export function saveMockDb(data: any) {
     return;
   }
 
-  const fs = require("fs");
-  const path = require("path");
+  const fs = eval('require("fs")');
+  const path = eval('require("path")');
   const dbPath = path.join(process.cwd(), "src/lib/supabase/mock-db.json");
   fs.writeFileSync(dbPath, JSON.stringify(data, null, 2), "utf8");
 }

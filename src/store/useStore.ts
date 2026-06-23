@@ -360,6 +360,7 @@ export const useStore = create<DashboardState>()(
     }),
     {
       name: "supply-pro-state",
+      skipHydration: true,
     }
   )
 );

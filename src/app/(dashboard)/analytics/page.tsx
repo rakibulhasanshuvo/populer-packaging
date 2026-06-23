@@ -78,7 +78,7 @@ export default function AnalyticsPage() {
                   borderRadius: "12px",
                   fontSize: "12px",
                 }}
-                formatter={(value: any) => [`${value}%`, "Margin"]}
+                formatter={(value: unknown) => [`${value}%`, "Margin"]}
               />
               <Bar dataKey="margin" radius={[0, 4, 4, 0]} barSize={16}>
                 {chartData.map((entry, index) => (

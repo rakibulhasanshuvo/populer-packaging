@@ -156,7 +156,7 @@ export default function OrderCard({ order, onRefresh }: OrderCardProps) {
 
         <div className="flex items-center gap-2">
           {/* Complete toggle */}
-          <button
+          <button type="button"
             onClick={handleToggleStatus}
             disabled={updating}
             className="bg-indigo-electric/10 hover:bg-indigo-electric/20 text-indigo-electric font-bold py-1 px-3 rounded-full text-xs flex items-center gap-1 transition-colors cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-neon"
@@ -174,7 +174,7 @@ export default function OrderCard({ order, onRefresh }: OrderCardProps) {
           </button>
 
           {/* Delete */}
-          <button
+          <button type="button"
             onClick={handleDelete}
             className="p-1 text-system-red hover:bg-system-red/10 rounded-full transition-colors cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-neon"
             title="Delete Order"

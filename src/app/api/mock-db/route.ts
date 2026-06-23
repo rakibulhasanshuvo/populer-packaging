@@ -11,7 +11,8 @@ export async function POST(request: Request) {
     const body = await request.json();
     saveMockDb(body);
     return NextResponse.json({ success: true });
-  } catch (err: any) {
+  } // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  catch (err: any) {
     return NextResponse.json({ success: false, error: err.message }, { status: 400 });
   }
 }

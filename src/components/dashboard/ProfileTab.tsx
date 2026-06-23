@@ -165,23 +165,20 @@ export default function ProfileTab() {
         <div className="flex gap-2">
           {isEditing ? (
             <>
-              <button
-                type="button"
+              <button type="button"
                 onClick={handleCancel}
                 className="flex-1 bg-black/5 dark:bg-white/5 hover:bg-black/10 dark:hover:bg-white/10 text-typography-primary dark:text-canvas-light py-2.5 rounded-apple-lg text-xs font-semibold transition-colors focus:outline-none"
               >
                 Cancel
               </button>
-              <button
-                type="submit"
+              <button type="submit"
                 className="flex-1 bg-apple-blue hover:bg-apple-blue/90 text-white py-2.5 rounded-apple-lg text-xs font-semibold transition-colors focus:outline-none"
               >
                 Save Changes
               </button>
             </>
           ) : (
-            <button
-              type="button"
+            <button type="button"
               onClick={() => setIsEditing(true)}
               className="w-full bg-apple-blue hover:bg-apple-blue/90 text-white py-2.5 rounded-apple-lg text-xs font-semibold transition-colors focus:outline-none"
             >
@@ -192,7 +189,7 @@ export default function ProfileTab() {
       </form>
 
       {/* Log out section */}
-      <button
+      <button type="button"
         onClick={() => {
           if (confirm("Are you sure you want to log out of the PWA session?")) {
             alert("Demo session cleared.");

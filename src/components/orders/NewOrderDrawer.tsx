@@ -131,8 +131,7 @@ export default function NewOrderDrawer({ onRefresh }: NewOrderDrawerProps) {
             className="fixed bottom-0 left-0 right-0 max-w-lg mx-auto bg-card-surface rounded-t-[24px] shadow-2xl z-50 overflow-hidden border-t border-white/10 pb-8"
           >
             {/* Grab Handle */}
-            <button
-              type="button"
+            <button type="button"
               aria-label="Close drawer"
               onClick={() => setOrderSheetOpen(false)}
               className="w-full flex justify-center py-3 cursor-pointer group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-neon focus-visible:ring-inset"
@@ -151,8 +150,7 @@ export default function NewOrderDrawer({ onRefresh }: NewOrderDrawerProps) {
                     Create New Client Order
                   </h2>
                 </div>
-                <button
-                  type="button"
+                <button type="button"
                   aria-label="Close drawer"
                   onClick={() => setOrderSheetOpen(false)}
                   className="p-1 rounded-full hover:bg-white/5 text-typography-secondary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-neon"
@@ -251,8 +249,7 @@ export default function NewOrderDrawer({ onRefresh }: NewOrderDrawerProps) {
                 </div>
 
                 {/* Submit button */}
-                <button
-                  type="submit"
+                <button type="submit"
                   disabled={loading}
                   className="w-full bg-indigo-electric hover:bg-indigo-electric/90 text-white font-bold py-3.5 rounded-apple-lg text-sm flex items-center justify-center gap-1.5 select-none active:scale-98 transition-transform shadow-sm mt-3 disabled:opacity-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-neon"
                 >
