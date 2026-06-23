@@ -54,7 +54,7 @@ export default function ProductCard({
         </div>
 
         <div className="text-right mr-1 shrink-0">
-          <div className="text-xs font-bold text-cyan-neon">
+          <div className="text-xs font-bold text-apple-blue">
             Avg Cost: ৳{avgUnitCost.toFixed(2)}
           </div>
           <div className="text-[9px] text-typography-secondary mt-1">
@@ -70,7 +70,7 @@ export default function ProductCard({
             e.stopPropagation();
             if (onEdit) onEdit();
           }}
-          className="p-2 bg-indigo-electric/10 hover:bg-indigo-electric/20 text-indigo-electric rounded-lg transition-colors cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-neon"
+          className="p-2 bg-indigo-electric/10 hover:bg-indigo-electric/20 text-indigo-electric rounded-lg transition-colors cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-apple-blue"
           title="Edit Details"
         >
           <Edit3 className="w-3.5 h-3.5" aria-hidden="true" />
@@ -82,7 +82,7 @@ export default function ProductCard({
             e.stopPropagation();
             if (onDelete) onDelete();
           }}
-          className="p-2 bg-system-red/10 hover:bg-system-red/20 text-system-red rounded-lg transition-colors cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-neon"
+          className="p-2 bg-system-red/10 hover:bg-system-red/20 text-system-red rounded-lg transition-colors cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-apple-blue"
           title="Delete Material"
         >
           <Trash2 className="w-3.5 h-3.5" aria-hidden="true" />

@@ -61,7 +61,7 @@ export default function OrdersClient({ initialOrders }: { initialOrders: Order[]
 
         <button
           onClick={() => setOrderSheetOpen(true)}
-          className="bg-indigo-electric hover:bg-indigo-electric/90 text-white font-bold py-2.5 px-4 rounded-apple-lg text-xs flex items-center gap-1.5 select-none active:scale-95 transition-all shadow-sm cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-neon"
+          className="bg-indigo-electric hover:bg-indigo-electric/90 text-white font-bold py-2.5 px-4 rounded-apple-lg text-xs flex items-center gap-1.5 select-none active:scale-95 transition-all shadow-sm cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-apple-blue"
         >
           <Plus className="w-4 h-4" aria-hidden="true" /> Create Order
         </button>
@@ -75,7 +75,7 @@ export default function OrdersClient({ initialOrders }: { initialOrders: Order[]
             <button
               key={stage.value}
               onClick={() => setActiveStage(stage.value)}
-              className={`flex-1 text-center py-2 text-[11px] font-bold rounded-md relative transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-neon cursor-pointer ${
+              className={`flex-1 text-center py-2 text-[11px] font-bold rounded-md relative transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-apple-blue cursor-pointer ${
                 isActive ? "text-typography-primary" : "text-typography-secondary"
               }`}
             >
@@ -104,7 +104,7 @@ export default function OrdersClient({ initialOrders }: { initialOrders: Order[]
             <span className="font-medium text-typography-secondary">No orders in this stage.</span>
             <button
               onClick={() => setOrderSheetOpen(true)}
-              className="mt-1 bg-indigo-electric/10 hover:bg-indigo-electric/20 text-indigo-electric font-bold py-1.5 px-4 rounded-full text-xs transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-neon cursor-pointer"
+              className="mt-1 bg-indigo-electric/10 hover:bg-indigo-electric/20 text-indigo-electric font-bold py-1.5 px-4 rounded-full text-xs transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-apple-blue cursor-pointer"
             >
               Create Order
             </button>

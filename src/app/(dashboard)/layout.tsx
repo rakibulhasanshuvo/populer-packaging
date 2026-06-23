@@ -16,7 +16,7 @@ export default function DashboardLayout({
     <div className="min-h-screen flex flex-col bg-canvas text-typography-primary pb-[100px] pt-20">
       <a
         href="#main-content"
-        className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-cyan-neon focus:text-black focus:rounded-md focus:font-semibold focus:shadow-md focus:outline-none"
+        className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-apple-blue focus:text-black focus:rounded-md focus:font-semibold focus:shadow-md focus:outline-none"
       >
         Skip to main content
       </a>

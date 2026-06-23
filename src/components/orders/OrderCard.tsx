@@ -159,7 +159,7 @@ export default function OrderCard({ order, onRefresh }: OrderCardProps) {
           <button
             onClick={handleToggleStatus}
             disabled={updating}
-            className="bg-indigo-electric/10 hover:bg-indigo-electric/20 text-indigo-electric font-bold py-1 px-3 rounded-full text-xs flex items-center gap-1 transition-colors cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-neon"
+            className="bg-indigo-electric/10 hover:bg-indigo-electric/20 text-indigo-electric font-bold py-1 px-3 rounded-full text-xs flex items-center gap-1 transition-colors cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-apple-blue"
           >
             {order.status === "pending" ? (
               <>
@@ -176,7 +176,7 @@ export default function OrderCard({ order, onRefresh }: OrderCardProps) {
           {/* Delete */}
           <button
             onClick={handleDelete}
-            className="p-1 text-system-red hover:bg-system-red/10 rounded-full transition-colors cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-neon"
+            className="p-1 text-system-red hover:bg-system-red/10 rounded-full transition-colors cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-apple-blue"
             title="Delete Order"
           >
             <Trash2 className="w-3.5 h-3.5" aria-hidden="true" />

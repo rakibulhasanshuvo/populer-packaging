@@ -135,7 +135,7 @@ export default function NewOrderDrawer({ onRefresh }: NewOrderDrawerProps) {
               type="button"
               aria-label="Close drawer"
               onClick={() => setOrderSheetOpen(false)}
-              className="w-full flex justify-center py-3 cursor-pointer group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-neon focus-visible:ring-inset"
+              className="w-full flex justify-center py-3 cursor-pointer group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-apple-blue focus-visible:ring-inset"
             >
               <div className="w-10 h-1 bg-white/20 rounded-full group-hover:bg-white/40 transition-colors" />
             </button>
@@ -155,7 +155,7 @@ export default function NewOrderDrawer({ onRefresh }: NewOrderDrawerProps) {
                   type="button"
                   aria-label="Close drawer"
                   onClick={() => setOrderSheetOpen(false)}
-                  className="p-1 rounded-full hover:bg-white/5 text-typography-secondary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-neon"
+                  className="p-1 rounded-full hover:bg-white/5 text-typography-secondary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-apple-blue"
                 >
                   <X className="w-6 h-6" aria-hidden="true" />
                 </button>
@@ -173,7 +173,7 @@ export default function NewOrderDrawer({ onRefresh }: NewOrderDrawerProps) {
                       id="product-select"
                       value={productId}
                       onChange={(e) => handleProductChange(e.target.value)}
-                      className="w-full bg-black/40 border border-white/10 rounded-apple-lg pl-9 pr-3 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-cyan-neon font-semibold text-typography-primary appearance-none"
+                      className="w-full bg-black/40 border border-white/10 rounded-apple-lg pl-9 pr-3 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-apple-blue font-semibold text-typography-primary appearance-none"
                     >
                       {products.map((p) => (
                         <option key={p.id} value={p.id}>
@@ -203,7 +203,7 @@ export default function NewOrderDrawer({ onRefresh }: NewOrderDrawerProps) {
                         placeholder="e.g. 5000"
                         value={quantity}
                         onChange={(e) => setQuantity(e.target.value)}
-                        className="w-full bg-black/40 border border-white/10 rounded-apple-lg pl-9 pr-3 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-cyan-neon font-semibold text-typography-primary"
+                        className="w-full bg-black/40 border border-white/10 rounded-apple-lg pl-9 pr-3 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-apple-blue font-semibold text-typography-primary"
                       />
                       <BarChart className="w-4 h-4 text-typography-secondary/60 absolute left-3 top-1/2 -translate-y-1/2" aria-hidden="true" />
                     </div>
@@ -222,7 +222,7 @@ export default function NewOrderDrawer({ onRefresh }: NewOrderDrawerProps) {
                         placeholder="150"
                         value={fixedSetupCost}
                         onChange={(e) => setFixedSetupCost(e.target.value)}
-                        className="w-full bg-black/40 border border-white/10 rounded-apple-lg pl-9 pr-3 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-cyan-neon font-semibold text-typography-primary"
+                        className="w-full bg-black/40 border border-white/10 rounded-apple-lg pl-9 pr-3 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-apple-blue font-semibold text-typography-primary"
                       />
                       <DollarSign className="w-4 h-4 text-typography-secondary/60 absolute left-3 top-1/2 -translate-y-1/2" aria-hidden="true" />
                     </div>
@@ -244,7 +244,7 @@ export default function NewOrderDrawer({ onRefresh }: NewOrderDrawerProps) {
                       placeholder="0.00"
                       value={sellingPrice}
                       onChange={(e) => setSellingPrice(e.target.value)}
-                      className="w-full bg-black/40 border border-white/10 rounded-apple-lg pl-9 pr-3 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-cyan-neon font-semibold text-typography-primary"
+                      className="w-full bg-black/40 border border-white/10 rounded-apple-lg pl-9 pr-3 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-apple-blue font-semibold text-typography-primary"
                     />
                     <ShoppingBag className="w-4 h-4 text-typography-secondary/60 absolute left-3 top-1/2 -translate-y-1/2" aria-hidden="true" />
                   </div>
@@ -254,7 +254,7 @@ export default function NewOrderDrawer({ onRefresh }: NewOrderDrawerProps) {
                 <button
                   type="submit"
                   disabled={loading}
-                  className="w-full bg-indigo-electric hover:bg-indigo-electric/90 text-white font-bold py-3.5 rounded-apple-lg text-sm flex items-center justify-center gap-1.5 select-none active:scale-98 transition-transform shadow-sm mt-3 disabled:opacity-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-neon"
+                  className="w-full bg-indigo-electric hover:bg-indigo-electric/90 text-white font-bold py-3.5 rounded-apple-lg text-sm flex items-center justify-center gap-1.5 select-none active:scale-98 transition-transform shadow-sm mt-3 disabled:opacity-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-apple-blue"
                 >
                   <Plus className="w-4 h-4" aria-hidden="true" /> {loading ? "Logging Order..." : "Create Order & Log"}
                 </button>

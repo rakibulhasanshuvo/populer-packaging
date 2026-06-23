@@ -76,7 +76,7 @@ class MockBuilder {
 
   async execute() {
     const db = getMockDb();
-    let list: any[] = db[this.table] || [];
+    const list: any[] = db[this.table] || [];
 
     if (this.action === "select") {
       let filtered = [...list];
@@ -165,7 +165,7 @@ class MockBuilder {
       saveMockDb(db);
       
       const filteredResult = updatedList.filter(item => {
-        let match = true;
+        const match = true;
         for (const filter of this.filters) {
           if (!filter(item)) return false;
         }
