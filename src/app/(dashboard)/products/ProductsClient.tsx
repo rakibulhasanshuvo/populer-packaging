@@ -77,7 +77,7 @@ export default function ProductsClient({ initialProducts }: { initialProducts: P
             setSelectedProduct(null);
             setProductDrawerOpen(true);
           }}
-          className="bg-indigo-electric hover:bg-indigo-electric/90 text-white font-bold py-2.5 px-4 rounded-apple-lg text-xs flex items-center gap-1.5 select-none active:scale-95 transition-all shadow-sm cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-neon"
+          className="bg-indigo-electric hover:bg-indigo-electric/90 text-white font-bold py-2.5 px-4 rounded-apple-lg text-xs flex items-center gap-1.5 select-none active:scale-95 transition-all shadow-sm cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-apple-blue"
         >
           <Plus className="w-4 h-4" aria-hidden="true" /> Create Material
         </button>
@@ -93,7 +93,7 @@ export default function ProductsClient({ initialProducts }: { initialProducts: P
           placeholder="Search SKU, name, or supplier…"
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
-          className="w-full bg-card-surface border border-white/8 rounded-apple-lg pl-10 pr-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-cyan-neon font-semibold text-typography-primary"
+          className="w-full bg-card-surface border border-white/8 rounded-apple-lg pl-10 pr-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-apple-blue font-semibold text-typography-primary"
         />
         <Search className="w-5 h-5 text-typography-secondary/60 absolute left-3 top-1/2 -translate-y-1/2" aria-hidden="true" />
       </div>

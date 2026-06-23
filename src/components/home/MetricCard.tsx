@@ -18,8 +18,8 @@ export default function MetricCard({
 }: MetricCardProps) {
   const themes = {
     cyan: {
-      text: "text-cyan-neon",
-      bg: "bg-cyan-neon/10 border-cyan-neon/20",
+      text: "text-apple-blue",
+      bg: "bg-apple-blue/10 border-apple-blue/20",
     },
     indigo: {
       text: "text-indigo-electric",

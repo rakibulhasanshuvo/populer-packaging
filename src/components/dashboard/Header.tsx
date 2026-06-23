@@ -43,13 +43,13 @@ export default function Header() {
           S
         </div>
         <span className="font-bold text-lg tracking-tight text-typography-primary">Supply Pro</span>
-        <span className="text-[10px] uppercase font-semibold bg-cyan-neon/10 text-cyan-neon px-1.5 py-0.5 rounded-full tracking-wider">
+        <span className="text-[10px] uppercase font-semibold bg-apple-blue/10 text-apple-blue px-1.5 py-0.5 rounded-full tracking-wider">
           PWA
         </span>
       </div>
 
       <div className="flex items-center gap-2.5">
-        <div className="w-9 h-9 rounded-full bg-cyan-neon/10 text-cyan-neon flex items-center justify-center font-bold text-xs border border-cyan-neon/20">
+        <div className="w-9 h-9 rounded-full bg-apple-blue/10 text-apple-blue flex items-center justify-center font-bold text-xs border border-apple-blue/20">
           {initials}
         </div>
       </div>
